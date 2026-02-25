@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*chamando a fonte do google-fonts*/
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Quantico", sans-serif;
+  background-color: rgb(0, 0, 0);
+  margin: 0px;
+  padding: 0px;
+}
+#menu {
+  background-color: #073c54b1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+#menu h1 {
+  margin-left: 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+#menuItensConteiner {
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.menuitens {
+  list-style: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.menuitens a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.menuitens:hover {
+  border-bottom: 2px solid rgb(4, 96, 172);
+  transition: ease all 0.5s;
+}
+.personal {
+  color: whitesmoke;
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+span {
+  color: rgb(4, 96, 172);
+}
+#Myinfo p {
+  text-align: justify;
+  width: 70%;
+}
+/*segunda section habilidades*/
+
+#habilidades {
+  width: 90%;
+  margin: auto;
+}
+#habilidadesInf {
+  padding: 50px;
+  color: whitesmoke;
+  text-align: center;
+}
+.carousel-inner img {
+  height: 500px;
+}
+.Contactos {
+  margin-top: 100px;
+}
+#contacto {
+  padding: 10px;
+
+  width: 80%;
+  color: whitesmoke;
+}
+#contacto h1,p {
+  text-align: center;
+  padding: 10px;
+}
+#contacto form {
+  background-color: #073c54b1;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+#contacto form button {
+  background-color:  rgb(4, 96, 172);
+}
+.social-icons a{
+    color: #073c54b1;
+    
+}
+hr{
+    font-weight: bold;
+  color: #073c54b1;
+}
