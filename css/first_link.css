@@ -54,24 +54,41 @@ nav {
   border-bottom: 2px solid rgb(4, 96, 172);
   transition: ease all 0.5s;
 }
+.hamburger {
+  display: none;
+}
 .personal {
   color: whitesmoke;
   margin: auto;
   width: 90%;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
   margin-top: 50px;
 }
+.profile-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
 
 span {
   color: rgb(4, 96, 172);
 }
+
 #Myinfo p {
   text-align: justify;
-  width: 70%;
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  #Myinfo p {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 /*segunda section habilidades*/
 
@@ -96,7 +113,8 @@ span {
   width: 80%;
   color: whitesmoke;
 }
-#contacto h1,p {
+#contacto h1,
+p {
   text-align: center;
   padding: 10px;
 }
@@ -107,13 +125,75 @@ span {
   border-radius: 5px;
 }
 #contacto form button {
-  background-color:  rgb(4, 96, 172);
+  background-color: rgb(4, 96, 172);
 }
-.social-icons a{
-    color: #073c54b1;
-    
-}
-hr{
-    font-weight: bold;
+.social-icons a {
   color: #073c54b1;
+}
+hr {
+  font-weight: bold;
+  color: #073c54b1;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #073c54b1;
+    padding: 10px 0;
+    border-top: 1px solid rgba(4, 96, 172, 0.3);
+    z-index: 999;
+  }
+  nav.active {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: whitesmoke;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+  #menuItensConteiner {
+    background-color: transparent;
+    margin-top: 0;
+    flex-direction: column;
+    gap: 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .menuitens {
+    width: 100%;
+    border-bottom: 1px solid rgba(4, 96, 172, 0.2);
+    padding: 10px 0;
+  }
+  .menuitens a {
+    display: block;
+    padding: 10px 20px;
+  }
+  .menuitens:hover {
+    border-bottom: 1px solid rgba(4, 96, 172, 0.2);
+    background-color: rgba(4, 96, 172, 0.3);
+  }
+  .personal {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .personal img {
+    margin-top: 20px;
+  }
 }
